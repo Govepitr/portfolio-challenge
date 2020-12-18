@@ -1,0 +1,38 @@
+.firstLetter {
+    color: rgb(45, 45, 151);    
+    font-family: 'Lobster', cursive;
+    font-size: larger;
+  }
+  .rest-of-word {
+    color: rgb(51, 124, 153);
+    font-family:fantasy; 
+    font-size: large;
+  }
+
+  .navbar-brand {
+    text-shadow: 5px 5px 4px rgb(31, 56, 71);
+  }
+
+  .hero-image {
+    background: url("./images/AMV.svg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./images/AMV.svg");
+}
+
+.hero-image div {
+    height: 600px;
+}
+
+  .hero-text h1 {
+      text-align:end;
+      color:floralwhite;
+      text-shadow: 5px 5px 4px rgb(118, 150, 163);
+      font-family: "fantasy", papyrus;
+      font-style: italic;
+      font-size: xx-large;
+      padding-right: 25px;
+      padding-top: 25%;
+  }
