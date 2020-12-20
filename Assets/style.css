@@ -1,8 +1,77 @@
 
+/* web kits (any element labled a link will have this applied to it) */
+
+:any-link {
+  color: #337c99;
+}
+
+/* end web kits
+
 /* navbar style begin */
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+header {
+  display: flex;
+  flex-flow: row;
+  padding: 2px;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  height: fit-content;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+  background-color: rgba(18, 22, 37, 0.822);
+}
+
+h1 {
+  color: rgb(51, 124, 153);
+  font-family: 'Francois One', sans-serif; 
+  font-size: 32px;
+  border-style: outset;
+  background-color: rgba(176, 224, 230,0.5);
+  width: fit-content;
+  display: inherit;
+  flex-flow: inherit;
+}
+
+h1 span {
+  color: rgb(45, 45, 151);    
+  font-family: 'Lobster', cursive;
+  font-size: 40px;
+}
+
+ul.navbar {
+  display: inherit;
+  flex-flow: inherit;
+  flex-direction: inherit;
+  list-style-type: none;
+  text-decoration: inherit;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+/* nabar style end */
+
+.hero-image {
+  background: url("./images/AMV.svg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./images/AMV.svg");
+}
+
+
+.hero-text h3 {
+  text-align:end;
+  color:floralwhite;
+  text-shadow: 5px 5px 4px rgb(118, 150, 163);
+  font-family: "fantasy", papyrus;
+  font-style: italic;
+  font-size: xx-large;
+  padding-right: 25px;
+  padding-top: 25%;
+  margin:0 ;
 }
