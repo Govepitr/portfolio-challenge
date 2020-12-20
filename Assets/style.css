@@ -1,21 +1,51 @@
-.header {
-    flex-direction: row;
+
+body {
+    background-color: rgb(148, 164, 177);
 }
+h1.name {
+    color: rgb(51, 124, 153);
+    font-family:fantasy; 
+    font-size: 35px;
+    text-shadow: 5px 5px 4px rgb(31, 56, 71);
+    border-style: outset ;
+    background-color: rgba(176, 224, 230,0.5);
+    width: fit-content;
+}
+
+h1.name::first-letter {
+    color: rgb(45, 45, 151);    
+    font-family: 'Lobster', cursive;
+    font-size: larger;
+}
+
+header.flex-container {
+    margin-right: 25px;
+    padding-top: 15px;
+    background-color: rgb(119, 119, 121);
+}
+
+nav ul {
+    list-style-type: none;
+    margin-right: 20px;
+    font-size: 20px;
+    text-anchor: middle;
+}
+
 
 
   /*-- hero -- */
 
-  .hero-image {
-    background: url("./images/AMV.svg");
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./images/AMV.svg");
+.hero-image {
+   background: url("./images/AMV.svg");
+   background-size: cover;
+   background-position: center center;
+   background-attachment: fixed;
+   background-repeat: no-repeat;
+   background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./images/AMV.svg");
 }
 
 .hero-image {
-    height: 600px;
+    height: 100%;
 }
 
 .hero-text h2 {
@@ -29,7 +59,7 @@
     padding-top: 25%;
 }
 
-.flex-container {
+.mebox {
     background-color: steelblue;
     font-weight: bold;
     width: 1000px;
@@ -52,7 +82,7 @@
 
 /* --- Grid -- */
 
-.wrapper-2 {
+.wrapper {
     display: grid;
     grid-template-rows: repeat(6, 1fr);
     grid-template-columns: 20px repeat(5, 1fr);
