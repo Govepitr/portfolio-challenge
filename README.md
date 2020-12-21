@@ -8,4 +8,4 @@ I present to you my ever growing proffesional portfolio. It not only includes th
 >> - Links - This are going to incorporate various links that will show my resume and professional contacts.
 
 ---
-![My Portfolio Screenshot](assets/images/Portfolio.png "Screenshot")
+![My Portfolio Screenshot](https://govepitr.github.io/portfolio-challenge/assets/images/Portfolio.png "Screenshot")
