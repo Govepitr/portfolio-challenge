@@ -1,168 +1,20 @@
 
-/* web kits (any element labeled a link will have this applied to it) */
-
-:any-link {
-  color: #364597;
-}
-
-/* end web kits */
-
-body {
-  margin: 0;
-  background-color: rgb(176, 224, 230);
-}
-
-/* navbar style begin */
-
-header {
-  display: flex;
-  flex-flow: row;
-  padding: 2px;
-  width: 100%;
-  justify-content: space-between;
-  flex-direction: row;
-  height: fit-content;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 28px;
-  text-decoration: none;
-  background-color: rgba(18, 22, 37, 0.822);
-}
-
-h1 {
+.rest-of-word {
   color: rgb(51, 124, 153);
-  font-family: 'Francois One', sans-serif; 
-  font-size: 32px;
-  border-style: outset;
-  background-color: rgba(176, 224, 230,0.5);
-  width: fit-content;
-  display: inherit;
-  flex-flow: inherit;
-  margin-left: 4px;
-}
-
-h1 span {
-  color: rgb(45, 45, 151);    
-  font-family: 'Lobster', cursive;
-  font-size: 40px;
-}
-
-ul.navbar {
-  display: inherit;
-  flex-flow: inherit;
-  flex-direction: inherit;
-  list-style-type: none;
-  text-decoration: inherit;
-}
-
-.navbar li {
-  margin: 0 20px;
-}
-
-/* navbar style end */
-
-/* Midoriya style */
-
-.hero-image {
-  background: url("./images/AMV.svg");
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./images/AMV.svg");
-}
-
-
-.hero-text h3 {
-  text-align:end;
-  color:floralwhite;
-  text-shadow: 5px 5px 4px rgb(118, 150, 163);
-  font-family: "fantasy", papyrus;
-  font-style: italic;
-  font-size: xx-large;
-  padding-right: 25px;
-  padding-top: 25%;
-  margin:0 ;
-}
-
-/* Midoriya style passed on */
-
-/* side content column */
-
-.side-content {
-  display: flex;
-}
-
-.side-container1 {
-  border-right: 3px solid rgb(54, 69, 151);
-  margin: 5px 25px 10px 10px;
-  padding: 5px 4px 10px 10px;
-  left: 0;
-  flex: 1 20%;
-  justify-content: flex-end;
-  flex-wrap: wrap;
-}
-
-.about-me-img {
-  background-image: linear-gradient(to bottom, rgba(21, 94, 122, 0.5), rgba(58, 56, 58, 0.7)), url(./images/mesmol.jpg);
-  background-size: cover;
-  width: 228px; 
-  height:170px;
-  box-shadow: -3px -3px 20px 20px #b0e0e6 inset ;
-}
-
-.about-par {
-  font-family: 'Cinzel Decorative', cursive;
-  margin: 20px 25px 0 0;
-  color: rgb(54, 69, 151);
-  font-weight: bold;
-}
-
-h4 {
-  font-family: 'sans-serif', Assistant;
+  font-family:fantasy; 
   font-size: 35px;
-  text-align: end;
-  color: rgb(54, 69, 151);
-  padding-left: 58%;
-  flex-wrap: wrap;
 }
 
-.side-container {
-  border-right: 3px solid rgb(54, 69, 151);
-  margin: 5px 0px 10px 10px;
-  padding: 5px 10px 10px 10px;
-  left: 0;
-  flex: 1 20%;
-  justify-content: flex-end;
-  flex-wrap: wrap;  
+.navbar-brand {
+  color: rgb(45, 45, 151) !important; 
+  text-shadow: 5px 5px 4px rgb(31, 56, 71);
+  font-family: 'Lobster', cursive;
+  font-size: 45px;
 }
 
-.work-windows {
-  margin: 10px 10px 10px 20px;
-  flex: 2 80%;
-  flex-wrap: wrap;
-}
-
-.windows-wrapper {
-display: grid;
-margin: 10px 10px 10px 20px;
-grid-template-columns: repeat(3, 1fr);
-grid-template-rows: repeat(3, minmax(100px, 1fr));
-grid-auto-flow: dense;
-grid-gap: 20px;
-}
-
-.side-container {
-  border: 3px solid var(--shadow-border-color);
-  display: flex;
-  align-items: flex-end;
-
-}
-
-.work-grid a {
-  font-size: 1.5rem;
-  font-weight: bold;
-  font-family: "Courier New", Courier, monospace;
-  color: var(--primary-font-color);
-  text-shadow: -1px 0px 3px var(--shadow-border-color),
-    -1px 0px 3px var(--shadow-border-color);
+.navbar-brand {
+  width: 10%;
+  height: 30%;
+  border-style: outset ;
+  background-color: rgba(177, 176, 230, 0.5);
 }
