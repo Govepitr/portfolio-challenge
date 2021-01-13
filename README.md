@@ -23,6 +23,6 @@
 
 > https://govepitr.github.io/portfolio-challenge/
 
-![Portfolio Screenshot](https://govepitr.github.io/portfolio-challenge/assets/images/Portfolio.png?raw=true "Portfolio Screenshot")
+![Portfolio Screenshot](https://github.com/Govepitr/portfolio-challenge/blob/portfolio-challenge/part2/Assets/images/Portfolio.png?raw=true "Portfolio Screenshot")
 
 
