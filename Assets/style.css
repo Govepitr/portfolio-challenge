@@ -1,3 +1,6 @@
+:any-link {
+  color: #337c99;
+}
 
 .rest-of-word {
   color: rgb(51, 124, 153);
@@ -17,4 +20,31 @@
   height: 30%;
   border-style: outset ;
   background-color: rgba(177, 176, 230, 0.5);
+}
+
+.nav-link {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.hero-image {
+  background: url("./images/AMV.svg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./images/AMV.svg");
+}
+
+.heroic {
+  text-align:end;
+  color:floralwhite;
+  text-shadow: 5px 5px 4px rgb(118, 150, 163);
+  font-family: "fantasy";
+  font-style: italic;
+  font-size: xx-large;
+  padding-right: 25px;
+  padding-top: 25%;
+  margin:0 ;
 }
