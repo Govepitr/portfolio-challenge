@@ -58,3 +58,114 @@
   padding-top: 25%;
   margin:0 ;
 }
+
+.main {
+  display: flex;
+}
+
+#about-me {
+}
+
+.about-me {
+}
+.body-box p {
+  color: var(--shadow-border-color);
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  text-align:justify;
+}
+
+.body-box p img {
+  float:left;
+  margin: 10px;
+}
+
+/* Work */
+#work {
+}
+.work-wrapper {
+  display: grid;
+  margin: 10px 10px 10px 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, minmax(100px, 1fr));
+  grid-auto-flow: dense;
+  grid-gap: 20px;
+}
+
+.work-grid {
+  border: 3px solid var(--shadow-border-color);
+  display: flex;
+  align-items: flex-end;
+
+}
+
+.work-grid a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  color: var(--primary-font-color);
+  text-shadow: -1px 0px 3px var(--shadow-border-color),
+    -1px 0px 3px var(--shadow-border-color);
+}
+
+.title-link {
+  flex: wrap;
+  justify-content: flex-end;
+  margin: 0 0 10px 0;
+  padding: 10px;
+  background-color: var(--button-hover);
+  opacity: 80%;
+}
+
+.run-buddy {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 2;
+  background: url(../images/run-buddy.PNG);
+  background: cover;
+}
+
+.horiseon {
+  background: url(../images/horiseon.PNG);
+  background-size: cover;
+  text-align: bottom;
+}
+
+.proj3 {
+  background: url(../images/proj3.jpg);
+  background-size: cover;
+}
+
+.proj4 {
+  background: url(../images/proj4.PNG);
+  background-size: cover;
+}
+
+.proj5 {
+  background: url(../images/proj5.jpg);
+  background-size: cover;
+}
+
+/* Contact Me*/
+#contact-me {
+}
+.contact-wrapper {
+  display: grid;
+  margin: 10px 10px 10px 20px;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-auto-flow: dense;
+  grid-gap: 30px;
+}
+
+.contact-grid a {
+  text-decoration: none;
+  color: var(--primary-font-color);
+  text-shadow: -1px 0px 3px var(--shadow-border-color),
+    -1px 0px 3px var(--shadow-border-color);
+  border-bottom: 3px solid var(--shadow-border-color);
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  justify-content: space-around;
+}
