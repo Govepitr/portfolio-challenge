@@ -2,9 +2,14 @@
   color: #337c99;
 }
 
+@font-face {
+  font-family: "Triforce";
+  src: url("/Assets/fonts/TriSymbol.ttf") format("ttf"); 
+}
+
 .rest-of-word {
   color: rgb(51, 124, 153);
-  font-family:fantasy; 
+  font-family: fantasy; 
   font-size: 35px;
 }
 
@@ -23,11 +28,16 @@
 }
 
 .nav-link {
-  font-family: 'Orbitron', sans-serif;
-  font-size: 28px;
+  color:  rgb(51, 124, 153)!important;
+  font-family: fantasy; 
+  font-size: 38px; 
+  text-shadow: -2px 4px 4px rgb(0, 0, 0); 
   text-decoration: none;
 }
 
+.dropdown-menu {
+  background-color: rgba(177, 176, 230, 0.5);
+}
 .hero-image {
   background: url("./images/AMV.svg");
   background-size: cover;
