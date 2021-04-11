@@ -1,5 +1,5 @@
 :any-link {
-  color: #337c99;
+  color: #337c99!important;
 }
 
 @font-face {
@@ -66,12 +66,14 @@
 #about-me {
 }
 
-.about-me {
+.caption {
+  font-size:x-large!important;
+  font-weight:normal!important;
 }
 .body-box p {
   color: var(--shadow-border-color);
   font-family: "Courier New", Courier, monospace;
-  font-weight: bold;
+  font-weight: bolder;
   text-align:justify;
 }
 
