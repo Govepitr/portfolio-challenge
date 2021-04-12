@@ -7,6 +7,7 @@
   src: url("/Assets/fonts/TriSymbol.ttf") format("ttf"); 
 }
 
+
 .rest-of-word {
   color: rgb(51, 124, 153);
   font-family: fantasy; 
@@ -44,8 +45,15 @@
   background-position: center center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./images/AMV.svg");
+  animation: reveal 5s  ease-in-out 3s alternate infinite;
+  /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./images/AMV.svg"); */
 }
+
+@keyframes reveal {
+  from {background-color: black;}
+  to {background-image: linear-gradient(rgba(0,0,0,0.5), url("./images/AMV.svg"));}
+}
+
 
 .heroic {
   text-align:end;
@@ -64,6 +72,26 @@
 }
 
 #about-me {
+}
+
+#biopic { 
+  position:relative!important;
+  height:281px!important;
+  width:450px!important;
+  margin:0 auto!important;
+}
+
+#biopic img {
+  position:absolute!important;
+  left:0!important;
+  -webkit-transition: opacity 2s ease-in-out!important;
+  -moz-transition: opacity 2s ease-in-out!important;
+  -o-transition: opacity 2s ease-in-out!important;
+  transition: opacity 2s ease-in-out!important;
+}
+
+#biopic img.top:hover {
+  opacity:0!important;
 }
 
 .caption {
