@@ -1,38 +1,42 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 :any-link {
-  color: #337c99!important;
+  color: #337c99 !important;
 }
 
 @font-face {
   font-family: "Triforce";
-  src: url("/Assets/fonts/TriSymbol.ttf") format("ttf"); 
+  src: url("/Assets/fonts/TriSymbol.ttf") format("ttf");
 }
-
 
 .rest-of-word {
   color: rgb(51, 124, 153);
-  font-family: fantasy; 
+  font-family: fantasy;
   font-size: 35px;
 }
 
 .navbar-brand {
-  color: rgb(45, 45, 151) !important; 
+  color: rgb(45, 45, 151) !important;
   text-shadow: 5px 5px 4px rgb(31, 56, 71);
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   font-size: 45px;
 }
 
 .navbar-brand {
   width: 10%;
   height: 30%;
-  border-style: outset ;
+  border-style: outset;
   background-color: rgba(177, 176, 230, 0.5);
 }
 
 .nav-link {
-  color:  rgb(51, 124, 153)!important;
-  font-family: fantasy; 
-  font-size: 38px; 
-  text-shadow: -2px 4px 4px rgb(0, 0, 0); 
+  color: rgb(51, 124, 153) !important;
+  font-family: fantasy;
+  font-size: 38px;
+  text-shadow: -2px 4px 4px rgb(0, 0, 0);
   text-decoration: none;
 }
 
@@ -40,79 +44,76 @@
   background-color: rgba(177, 176, 230, 0.5);
 }
 .hero-image {
-  background: url("./images/AMV.svg");
   background-size: cover;
-  background-position: center center;
+  background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  animation: reveal 5s  ease-in-out 3s alternate infinite;
-  /* background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("./images/AMV.svg"); */
+  animation: reveal 5s ease-in-out 3s alternate infinite;
+  animation-fill-mode: backwards;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/AMV.svg");
 }
 
 @keyframes reveal {
-  from {background-color: black;}
-  to {background-image: linear-gradient(rgba(0,0,0,0.5), url("./images/AMV.svg"));}
+  from {
+    background-color: black;
+  }
+  to {
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      url("./images/AMV.svg")
+    );
+  }
 }
 
-
 .heroic {
-  text-align:end;
-  color:floralwhite;
+  text-align: end;
+  color: floralwhite;
   text-shadow: 5px 5px 4px rgb(118, 150, 163);
   font-family: "fantasy";
   font-style: italic;
   font-size: xx-large;
   padding-right: 25px;
   padding-top: 25%;
-  margin:0 ;
+  margin: 0;
 }
 
 .main {
   display: flex;
 }
 
-#about-me {
-}
-
-#biopic { 
-  position:relative!important;
-  height:281px!important;
-  width:450px!important;
-  margin:0 auto!important;
+#biopic {
+  position: relative !important;
+  height: 281px !important;
+  width: 450px !important;
+  margin: 0 auto !important;
 }
 
 #biopic img {
-  position:absolute!important;
-  left:0!important;
-  -webkit-transition: opacity 2s ease-in-out!important;
-  -moz-transition: opacity 2s ease-in-out!important;
-  -o-transition: opacity 2s ease-in-out!important;
-  transition: opacity 2s ease-in-out!important;
+  position: absolute !important;
+  left: 0 !important;
+  -webkit-transition: opacity 2s ease-in-out !important;
+  -moz-transition: opacity 2s ease-in-out !important;
+  -o-transition: opacity 2s ease-in-out !important;
+  transition: opacity 2s ease-in-out !important;
 }
 
 #biopic img.top:hover {
-  opacity:0!important;
+  opacity: 0 !important;
 }
 
 .caption {
-  font-size:x-large!important;
-  font-weight:normal!important;
+  font-size: x-large !important;
+  font-weight: normal !important;
 }
 .body-box p {
-  color: var(--shadow-border-color);
   font-family: "Courier New", Courier, monospace;
   font-weight: bolder;
-  text-align:justify;
-}
-
-.body-box p img {
-  float:left;
-  margin: 10px;
+  text-align: justify;
 }
 
 /* Work */
-#work {
-}
+
 .work-wrapper {
   display: grid;
   margin: 10px 10px 10px 20px;
@@ -126,7 +127,6 @@
   border: 3px solid var(--shadow-border-color);
   display: flex;
   align-items: flex-end;
-
 }
 
 .work-grid a {
@@ -193,4 +193,57 @@
   font-family: "Courier New", Courier, monospace;
   display: flex;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 786px) {
+  .navbar-brand {
+    display: none;
+  }
+  .hero-image {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    animation: reveal 5s ease-in-out 3s alternate infinite;
+    animation-fill-mode: backwards;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("./images/AMV.svg");
+  }
+
+  @keyframes reveal {
+    from {
+      background-color: black;
+    }
+    to {
+      background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        url("./images/AMV.svg")
+      );
+    }
+  }
+  #biopic {
+    position: relative !important;
+    height: 281px !important;
+    width: 450px !important;
+    margin: 0 auto !important;
+  }
+
+  #biopic img {
+    position: absolute !important;
+    left: 0 !important;
+    -webkit-transition: opacity 2s ease-in-out !important;
+    -moz-transition: opacity 2s ease-in-out !important;
+    -o-transition: opacity 2s ease-in-out !important;
+    transition: opacity 2s ease-in-out !important;
+  }
+
+  #biopic img.top:hover {
+    opacity: 0 !important;
+  }
+
+  .body-box {
+    
+  }
+
+
 }
