@@ -1,6 +1,7 @@
 # Semi-Pro Portfolio
 ---
 
+
 ## I present to you my ever growing proffesional portfolio. It not only includes the willingness to bring my creativity to any project I am involved with, but it will showcase the skills I have developed as I dedicate myself to make a webpage shine. Inside are:
 
 - About Me - This will soon include an actual bio regarding my unique skills I bring to the table.
@@ -23,6 +24,5 @@
 
 > https://govepitr.github.io/portfolio-challenge/
 
-![Portfolio Screenshot](https://govepitr.github.io/portfolio-challenge/assets/images/Portfolio.png?raw=true "Portfolio Screenshot")
-
+![Portfolio Screenshot](https://github.com/Govepitr/portfolio-challenge/blob/portfolio-challenge/part2/Assets/images/Portfolio.png?raw=true "Portfolio Screenshot")
 
