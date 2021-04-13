@@ -123,7 +123,20 @@ body {
 
 /* Work */
 
-
+.carousel-inner {
+  margin: auto;
+  width:min-content;}
+  .carousel-item img{
+    margin:auto;
+    width: 461px;
+    height: 322px;
+    object-fit: cover;
+}
+.carousel.pointer-event {
+  touch-action: pan-y;
+  -ms-touch-action: pan-y;
+  
+}
 
 /* Contact Me*/
 
@@ -196,8 +209,22 @@ body {
   #biopic img.top:hover {
     opacity: 0 !important;
   }
-
+  .carousel-inner {
+    margin: auto;
+    width:min-content;}
+    .carousel-item img{
+      margin:auto;
+      object-fit: auto;
+  }
   
+}
 
-
+@media screen and (max-width: 501px) {
+  .carousel-inner {
+    margin: auto;
+    width:auto;}
+    .carousel-item img{
+      margin:auto;
+      object-fit: auto;
+  }
 }
