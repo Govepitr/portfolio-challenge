@@ -14,7 +14,7 @@ body {
 
 
 .rest-of-word {
-  color: rgb(51, 124, 153);
+  color: rgb(132 183 204);
   font-family: fantasy;
   font-size: 35px;
 }
@@ -34,7 +34,7 @@ body {
 }
 
 .nav-link {
-  color: rgb(51, 124, 153) !important;
+  color: rgb(132 183 204) !important;
   font-family: 'fantasy';
   font-size: 38px;
   font-weight:bold;
@@ -53,6 +53,12 @@ body {
     background-color: rgb(18, 22, 37);
     color: cyan;
 }
+
+#topContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
 .hero-image {
   background-size: cover;
   background-position: center;
@@ -112,10 +118,7 @@ body {
   opacity: 0 !important;
 }
 
-.caption {
-  font-size: x-large !important;
-  font-weight: normal !important;
-}
+
 
 .text-end p {
   margin: 1px;
@@ -146,6 +149,9 @@ body {
   margin: 10px 10px 10px 20px;
 }
 
+.text-center {
+  text-align: center;
+}
 
 .card-title {
   font-weight: bolder;
