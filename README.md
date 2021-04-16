@@ -1,16 +1,16 @@
-# Semi-Pro Portfolio
+# Portfolio
 ---
 
 
 ## I present to you my ever growing professional portfolio. It not only includes the willingness to bring my creativity to any project I am involved with, but it will showcase the skills I have developed as I dedicate myself to make a webpage shine. Inside are:
 
-- About Me - This will soon include an actual bio regarding my unique skills I bring to the table.
+- About Me - 
 
-- Work - Items I have already worked on, but with some room that shows I intend to continue growing and adding.
+- Work - 
 
-- Contact Me - Here are various methods to get in touch with me
+- Contact Me - 
 
-- Links - This are going to incorporate various links that will show my resume and professional contacts.
+- Links - 
 
 
 
@@ -22,7 +22,7 @@
 
 ### GitHub Live Site
 
-> https://govepitr.github.io/portfolio-challenge/
+> https://govepitr.github.io/
 
 ![Portfolio Screenshot](https://github.com/Govepitr/portfolio-challenge/blob/work/Assets/images/pardon.gif?raw=true "Portfolio Screenshot")
 
