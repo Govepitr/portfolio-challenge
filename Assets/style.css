@@ -154,7 +154,7 @@ body {
   margin-left: auto;
 }
 #biopic img {
-  position: absolute !important;
+  /* position: absolute !important; */
   margin-right: auto;
   margin-left: auto;
   /* left: 0 !important; */
@@ -163,6 +163,12 @@ body {
   -o-transition: opacity 2s ease-in-out !important;
   transition: opacity 2s ease-in-out !important;
 }
+.top.rounded {
+  position: absolute !important;
+  right: 24.5%!important;
+}
+
+
 
 #biopic img.top:hover {
   opacity: 0 !important;
@@ -172,6 +178,8 @@ body {
 
 .text-end p {
   margin: 1px;
+  text-align:justify;
+  padding: 0% 15% 0 15%;
 }
 
 /* Work */
@@ -319,6 +327,7 @@ a:hover span#email::before {
       );
     }
   }
+
   #biopic {
     position: relative !important;
     height: 281px !important;
@@ -327,12 +336,16 @@ a:hover span#email::before {
   }
 
   #biopic img {
-    position: absolute !important;
-    left: 0 !important;
+    
+    
     -webkit-transition: opacity 2s ease-in-out !important;
     -moz-transition: opacity 2s ease-in-out !important;
     -o-transition: opacity 2s ease-in-out !important;
     transition: opacity 2s ease-in-out !important;
+  }
+  .top.rounded {
+    position: absolute !important;
+    
   }
 
   #biopic img.top:hover {
