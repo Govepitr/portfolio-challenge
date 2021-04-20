@@ -24,5 +24,5 @@
 
 > https://govepitr.github.io/
 
-![Portfolio Screenshot](https://github.com/Govepitr/portfolio-challenge/blob/work/Assets/images/pardon.gif?raw=true "Portfolio Screenshot")
+![Portfolio Screenshot](https://github.com/Govepitr/portfolio-challenge/blob/main/Assets/images/pardon.gif?raw=true "Portfolio Screenshot")
 
