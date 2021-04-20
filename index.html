@@ -9,6 +9,8 @@
   <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" />
+  <scripts src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></scripts>
   <script src="https://kit.fontawesome.com/4a46406c1d.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./Assets/style.css" />
   <link rel="stylesheet" href="./dist/bg-color-morph.css" rel="stylesheet">
@@ -58,13 +60,13 @@
     <div>
       <hero>
         <div class="hero-image">
-          <div class="text-right hero-text marker" data-color="254, 240, 230">
+          <div class="text-right hero-text marker" data-color="234, 225, 210">
             <h3 class="heroic">I code, therefore I am..</h3>
           </div>
         </div>
       </hero>
     </div>
-    <section id="about-me" class="clearfix marker mt-5" data-color="165, 155, 145">
+    <section id="about-me" class=" marker mt-5" data-color="165, 155, 145">
       <figure class="justify-content-center" id="biopic">
         <div class="text-center">
           <h2 id="aboutMe">About Me</h2>
@@ -72,25 +74,19 @@
           <img src="Assets\images/smolder.jpg" class="top rounded" alt="Bio Pic" />
         </div>
       </figure>
-      <div class="text-end marker" data-color="61, 221, 189">
+      <div class="text-end marker mt-5" data-color="110, 178, 159">
         <p>
-          Now that we know who you are, I know who I am. I'm not a mistake! It
-          all makes sense! In a comic, you know how you can tell who the
-          arch-villain's going to be? He's the exact opposite of the hero. And
-          most times they're friends, like you and me! I should've known way
-          back when... You know why, David? Because of the kids. They called me
-          Mr Glass. Your bones don't break, mine do. That's clear. Your cells react to
-          bacteria and viruses differently than mine. You don't get sick, I do.
-          That's also clear. But for some reason, you and I react the exact same
-          way to water. We swallow it too fast, we choke. We get some in our
-          lungs, we drown. However unreal it may seem, we are connected, you and
-          I. We're on the same curve, just on opposite ends.
+          Hi! My name is <span id="dan">Dan Arbelo</span>. I am a Full-Stack Web developer. One of the things I have realized in so many professional environments is that "less is more".<br>
+          That is something that is even more consistent in coding. Whether it's simple HTML/CSS, JavaScript, Handlebars.js, and even within the MERN stack itself!<br>
+          One of the things I have always prided myself on is not only taking the time to fully understand what tools I have to work with, but more importantly what is the most efficient way to<br>
+          apply them!<br>
+          I have developed a fairly deep love for designing a user experience that is not overwhelming to a new-comer, but is also memorable to a those who have seen a few things.
         </p>
       </div>
     </section>
     <!-- My Work Section/run-buddy & horiseon/fillers -->
     <section id="work">
-      <div class="body-title text-center mt-5 mb-5">
+      <div class="body-title text-center marker mt-5 mb-5" data-color="67, 107, 131">
         <h2>My work</h2>
       </div>
       <div id="carouselControls" class="carousel slide mx-auto" data-bs-ride="carousel">
@@ -139,15 +135,15 @@
       <div class="container mt-5">
         <div id="contact" class="card-body col text-center">
           <h2 class="card-title">Contact Me</h2>
-          <hr>
-          <a href="mailto:dan@areblo.me" class="card-link"><span id="email" data-content="Email"
-              aria-hidden="true"></span>Email</a>
+          <hr>          
+          <a href="mailto:dan@areblo.me" class="email">Email</a>
         </div>
       </div>
     </section>
   </div>
-  <scripts src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></scripts>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
     crossorigin="anonymous"></script>
@@ -166,6 +162,91 @@
       container.append(newSpan);
       container.append(secondSpan);
     }
+  </script>
+  <script>
+    var anchors = document.querySelectorAll('.email')
+
+      Array.prototype.forEach.call(anchors, function (anchor) {
+        anchor.addEventListener('click', explode)
+      })
+
+      function explode(e) {
+        var x = e.clientX
+        var y = e.clientY
+        var c = document.createElement('canvas')
+        var ctx = c.getContext('2d')
+        var ratio = window.devicePixelRatio
+        var particles = []
+
+        document.body.appendChild(c)
+
+        c.style.position = 'absolute'
+        c.style.left = (x - 100) + 'px'
+        c.style.top = (y - 100) + 'px'
+        c.style.pointerEvents = 'none'
+        c.style.width = 200 + 'px'
+        c.style.height = 200 + 'px'
+        c.width = 200 * ratio
+        c.height = 200 * ratio
+
+        function Particle() {
+          return {
+            x: c.width / 2,
+            y: c.height / 2,
+            radius: r(20, 30),
+            color: 'rgb(' + [r(0, 255), r(0, 255), r(0, 255)].join(',') + ')',
+            rotation: r(0, 360, true),
+            speed: r(8, 12),
+            friction: 0.9,
+            opacity: r(0, 0.5, true),
+            yVel: 0,
+            gravity: 0.1
+          }
+        }
+
+        for (var i = 0; ++i < 25;) {
+          particles.push(Particle())
+        }
+
+        console.log(particles[0])
+
+        function render() {
+          ctx.clearRect(0, 0, c.width, c.height)
+
+          particles.forEach(function (p, i) {
+
+            angleTools.moveOnAngle(p, p.speed)
+
+            p.opacity -= 0.01
+            p.speed *= p.friction
+            p.radius *= p.friction
+
+            p.yVel += p.gravity
+            p.y += p.yVel
+
+            if (p.opacity < 0) return
+            if (p.radius < 0) return
+
+            ctx.beginPath()
+            ctx.globalAlpha = p.opacity
+            ctx.fillStyle = p.color
+            ctx.arc(p.x, p.y, p.radius, 0, 2 * Math.PI, false)
+            ctx.fill()
+          })
+        }
+
+        ; (function renderLoop() {
+          requestAnimationFrame(renderLoop)
+          render()
+        })()
+
+        setTimeout(function () {
+          document.body.removeChild(c)
+        }, 3000)
+      }
+
+      var angleTools = { getAngle: function (t, n) { var a = n.x - t.x, e = n.y - t.y; return Math.atan2(e, a) / Math.PI * 180 }, getDistance: function (t, n) { var a = t.x - n.x, e = t.y - n.y; return Math.sqrt(a * a + e * e) }, moveOnAngle: function (t, n) { var a = this.getOneFrameDistance(t, n); t.x += a.x, t.y += a.y }, getOneFrameDistance: function (t, n) { return { x: n * Math.cos(t.rotation * Math.PI / 180), y: n * Math.sin(t.rotation * Math.PI / 180) } } };
+      function r(a, b, c) { return parseFloat((Math.random() * ((a ? a : 1) - (b ? b : 0)) + (b ? b : 0)).toFixed(c ? c : 0)); }
   </script>
   <script src="./dist/bg-color-morph.js"></script>
   </div>

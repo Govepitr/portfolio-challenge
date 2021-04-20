@@ -1,3 +1,4 @@
+
 @font-face {
   font-family: "Triforce";
   src: url("/Assets/fonts/TriSymbol.ttf") format("ttf");
@@ -13,7 +14,7 @@ body {
   margin: 0px 1px 0px 1px;}
   body {
     width: unset;
-    background-color:rgb(254, 254 ,254);
+    background-color:rgb(254, 244 ,234);
   }
 
 :any-link  {
@@ -98,7 +99,6 @@ body {
 .marker {
   max-width: unset;
   height: unset 100vh;
-  /* z-index: ; */
 }
 
 
@@ -154,10 +154,8 @@ body {
   margin-left: auto;
 }
 #biopic img {
-  /* position: absolute !important; */
   margin-right: auto;
-  margin-left: auto;
-  /* left: 0 !important; */
+  margin-left: auto;  
   -webkit-transition: opacity 2s ease-in-out !important;
   -moz-transition: opacity 2s ease-in-out !important;
   -o-transition: opacity 2s ease-in-out !important;
@@ -168,8 +166,6 @@ body {
   right: 24.5%!important;
 }
 
-
-
 #biopic img.top:hover {
   opacity: 0 !important;
 }
@@ -177,11 +173,17 @@ body {
 
 
 .text-end p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 300;
   margin: 1px;
-  text-align:justify;
+  text-align:center;
   padding: 0% 15% 0 15%;
 }
 
+span#dan{
+  font-family: 'Triforce';
+  font-weight:500!important;
+}
 /* Work */
 
 .carousel-inner {
@@ -219,42 +221,54 @@ body {
 	animation-timing-function: linear;
 }
 
+
+
+
+
 @-webkit-keyframes color-transition {
 	0% {
-		background-color: #2bd0b6;
-		border-color: #2bd0b6;
+		background-color: #ec18b2;
+		border-color: #ec18b2;
 	}
-	33% {
-		background-color: #3ae57e;
-		border-color: #3ae57e;
+	20% {
+		background-color: #ec6d18;
+		border-color: #ec6d18;
 	}
-	66% {
-		background-color: #3ba4a2;
-		border-color: #3ba4a2;
+	40% {
+		background-color: #78d421;
+		border-color: #78d421;
 	}
-	100% {
-		background-color: #3c63c5;
-		border-color: #3c63c5;
+	80% {
+		background-color: #5af798;
+		border-color: #5af798;
 	}
+  100% {
+    background-color: #7be7d7;
+    border-color: #7be7d7;
+  }
 }
 
 @keyframes color-transition {
 	0% {
-		background-color: #2bd0b6;
-		border-color: #2bd0b6;
+		background-color: #ec18b2;
+		border-color: #ec18b2;
 	}
-	33% {
-		background-color: #3ae57e;
-		border-color: #3ae57e;
+	20% {
+		background-color: #ec6d18;
+		border-color: #ec6d18;
 	}
-	66% {
-		background-color: #3ba4a2;
-		border-color: #3ba4a2;
+	40% {
+		background-color: #78d421;
+		border-color: #78d421;
 	}
-	100% {
-		background-color: #3c63c5;
-		border-color: #3c63c5;
+	80% {
+		background-color: #5af798;
+		border-color: #5af798;
 	}
+  100% {
+    background-color: #7be7d7;
+    border-color: #7be7d7;
+  }
 }
 
 .text-center {
@@ -265,7 +279,8 @@ body {
   font-weight: bolder;
 }
 .card-body {  
-  font-weight:bolder;  
+  font-weight:bolder;
+  border-radius: 25px;  
 }
 .card  {
   text-decoration: none;  
@@ -275,31 +290,19 @@ body {
   align-items: center;
 }
 
-span#email {
-  color: black;
-  font-family: 'PT Sans Narrow', sans-serif;
-  position:absolute;
-  overflow: hidden;
-  transform: translateX(-100%);
-  transition: transform 275ms ease;
+
+.email {
+  font-size: 28px!important;
+  font-family: 'Triforce'!important;
+  color: #006400!important;
+  display:inline-block;
+  position:relative;
+}
+.email:hover {
+  text-decoration:none;
 }
 
-a:hover span#email {
-  transform: translateX(0);
-}
 
-span#email::before {
-  display: inline-block;
-  content: attr(data-content);
-  color: darkgreen;
-  font-family: "Triforce";
-  transform: translateX(100%);
-  transition: transform 275ms ease;
-}
-
-a:hover span#email::before {
-  transform: translateX(0);
-}
 
 @media screen and (max-width: 786px) {
   .navbar-brand {
