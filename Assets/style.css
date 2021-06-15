@@ -98,7 +98,7 @@ body {
 
 .marker {
   max-width: unset;
-  height: unset 100vh;
+  height: unset;
 }
 
 
@@ -150,6 +150,10 @@ body {
   margin: 0 auto !important;
 }
 .div h2 {
+  margin-right: auto;
+  margin-left: auto;
+}
+.div h3 {
   margin-right: auto;
   margin-left: auto;
 }
