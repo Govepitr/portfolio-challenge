@@ -8,6 +8,7 @@
 @import url(https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,900);
 
 
+
 html,
 body {
   overflow-x: hidden;
@@ -98,7 +99,7 @@ body {
 
 .marker {
   max-width: unset;
-  height: unset 100vh;
+  height: unset;
 }
 
 
@@ -153,6 +154,10 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+.div h3 {
+  margin-right: auto;
+  margin-left: auto;
+}
 #biopic img {
   margin-right: auto;
   margin-left: auto;  
@@ -172,7 +177,7 @@ body {
 
 
 
-.text-end p {
+.text p {
   font-family: 'Noto Sans JP', sans-serif;
   font-weight: 300;
   margin: 1px;
@@ -271,12 +276,14 @@ span#dan{
   }
 }
 
-.text-center {
-  text-align: center;
-}
+
 
 .card-title {
   font-weight: bolder;
+  font-family: 'Oswald', sans-serif;
+  font-size: x-large;
+  letter-spacing: 2.5px;
+  color: #333333;
 }
 .card-body {  
   font-weight:bolder;
